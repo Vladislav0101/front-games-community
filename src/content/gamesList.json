@@ -1,0 +1,65 @@
+[
+  {
+    "value": "callOfDutyMW2",
+    "name": "Call of duty: MW 2",
+    "image": "/assets/pictures/games/call-of-duty-mw-2.jpg",
+    "rating": 5,
+    "color": "#7ecf20"
+  },
+  {
+    "value": "forzaHorizon5",
+    "name": "Forza horizon 5",
+    "image": "/assets/pictures/games/forza-horizon-5.jpg",
+    "rating": 5,
+    "color": "#a1031a"
+  },
+  {
+    "value": "asValhalla",
+    "name": "Assassins creed: Valhalla",
+    "image": "/assets/pictures/games/as-valhalla.jpg",
+    "rating": 5,
+    "color": "#aac8da"
+  },
+  {
+    "value": "gta5",
+    "name": "GTA V",
+    "image": "/assets/pictures/games/gta-5.jpg",
+    "rating": 5,
+    "color": "#f9af00"
+  },
+  {
+    "value": "dota2",
+    "name": "DOTA 2",
+    "image": "/assets/pictures/games/dota-2.jpg",
+    "rating": 5,
+    "color": "#af140f"
+  },
+  {
+    "value": "csGO",
+    "name": "CS:GO",
+    "image": "/assets/pictures/games/cs-go.png",
+    "rating": 5,
+    "color": "#ffa500"
+  },
+  {
+    "value": "gowRagnarok",
+    "name": "God of War: Ragnarök",
+    "image": "/assets/pictures/games/god-of-war-rognarok.jpg",
+    "rating": 5,
+    "color": "#a8c4e9"
+  },
+  {
+    "value": "fifa22",
+    "name": "FIFA 2022",
+    "image": "/assets/pictures/games/fifa-22.jpeg",
+    "rating": 5,
+    "color": "#ea1436"
+  },
+  {
+    "value": "nba22",
+    "name": "NBA 2022",
+    "image": "/assets/pictures/games/nba-22.jpg",
+    "rating": 5,
+    "color": "#0f70e5"
+  }
+]
