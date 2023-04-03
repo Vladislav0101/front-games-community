@@ -18,15 +18,15 @@ const GAME_CARDS_QUERY = gql`
 
 provideApolloClient(ApolloClient);
 
-const getAllGameCards = new Promise((res, rej) => {
-  const { onResult, onError }: any = useQuery(GAME_CARDS_QUERY);
+const getAllGameCards: Promise<IGameCard[]> = new Promise((res, rej) => {
+  const { onResult, onError } = useQuery(GAME_CARDS_QUERY);
 
-  onResult((result: any) => {
-    const gameCards: Array<IGameCard> = result.data.gameCards;
+  onResult((result): void => {
+    const gameCards: IGameCard[] = result.data.gameCards;
     res(gameCards);
   });
 
-  onError((error: any) => {
+  onError((error): void => {
     rej(error);
   });
 });
