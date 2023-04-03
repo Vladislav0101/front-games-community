@@ -1,6 +1,6 @@
 export interface IGameCard {
-  value: string;
-  name: string;
+  readonly value: string;
+  readonly name: string;
   image: string;
   rating: number;
   color: number;

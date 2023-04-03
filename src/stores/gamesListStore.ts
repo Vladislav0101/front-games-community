@@ -1,3 +1,4 @@
+import { ApolloError } from "@apollo/client";
 import { defineStore } from "pinia";
 
 import { IState, IGameCard } from "@/models/gamesListStore";
@@ -16,12 +17,14 @@ export const gamesListStore = defineStore("games", {
 
   actions: {
     fetchCards() {
-      gameCardsService.getAllGameCards.then((result: any) => {
-        this.gamesCards = result;
-        this.isAllGamesLoaded = true;
-        this.displayedGames = this.gamesCards;
-        // debugger;
-      });
+      gameCardsService.getAllGameCards
+        .then((result) => {
+          this.gamesCards = this.displayedGames = result;
+          this.isAllGamesLoaded = true;
+        })
+        .catch((err) => {
+          throw new Error(err);
+        });
     },
 
     changeDisplayedGames({ searchingName }: { searchingName: string }) {
